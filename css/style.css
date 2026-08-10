@@ -375,6 +375,12 @@ body {
     top: 35px;
 }
 
+.photo-main img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
 
 .photo-art {
 
