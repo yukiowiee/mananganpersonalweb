@@ -376,9 +376,9 @@ body {
 }
 
 .photo-main img {
-    width: 100%;
+    width: 266px;
     height: 300px;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 }
 
