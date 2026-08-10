@@ -1,222 +1,66 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Contact Me ♡</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Patrick+Hand&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Your original CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
 <!-- =========================
-     NAVIGATION
+     LETTER / FORM
 ========================= -->
 
-<nav class="scrap-nav">
-    <div class="nav-links">
+<div class="letter">
 
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="skills.html">Skills</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html" class="active">Contact</a>
+    <form
+        action="https://formspree.io/f/xzepelbw"
+        method="POST"
+    >
 
-    </div>
-</nav>
+        <label for="name">
+            Your name
+        </label>
 
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder=""
+            required
+        >
 
-<!-- =========================
-     CONTACT PAGE
-========================= -->
+        <label for="email">
+            Your email
+        </label>
 
-<main class="paper-page">
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder=""
+            required
+        >
 
-    <section class="scrapbook inner-page">
+        <label for="message">
+            Your little message
+        </label>
 
-        <!-- Decorations -->
-        <div class="tape tape-top"></div>
+        <textarea
+            id="message"
+            name="message"
+            rows="7"
+            placeholder=""
+            required
+        ></textarea>
 
-        <div class="doodle star s1">✦</div>
-        <div class="doodle star s2">✧</div>
-        <div class="doodle star s3">★</div>
-        <div class="doodle flower">✿</div>
-        <div class="doodle heart">♡</div>
-        <div class="heart-big">♥</div>
+        <input
+            type="hidden"
+            name="_subject"
+            value="New message from my scrapbook website"
+        >
 
+        <button
+            type="submit"
+            class="sticker-btn"
+        >
+            Send My Letter 💌
+        </button>
 
-        <!-- Page Title -->
+    </form>
 
-        <div class="page-title">
-
-            <span>LET'S TALK ♡</span>
-
-            <h1>Contact Me</h1>
-
-            <p>
-                Leave me a little message in my scrapbook.
-            </p>
-
-        </div>
-
-
-        <!-- Contact Layout -->
-
-        <div style="
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 45px;
-            align-items: start;
-        ">
-
-
-            <!-- =========================
-                 LEFT NOTE
-            ========================= -->
-
-            <div class="contact-note">
-
-                <h2>Say Hello! ♡</h2>
-
-                <p>
-                    Have something to say?
-                    Send me a message and I'll be happy
-                    to hear from you!
-                </p>
-
-                <div class="contact-line">
-                    💌 <b>MESSAGE:</b><br>
-                    Fill out the little letter on the right.
-                </div>
-
-                <div class="contact-line">
-                    🌷 <b>REPLY:</b><br>
-                    I'll receive your message through email.
-                </div>
-
-                <div class="contact-line">
-                    ✨ <b>THANK YOU:</b><br>
-                    Your message means a lot to me!
-                </div>
-
-            </div>
-
-
-            <!-- =========================
-                 LETTER / FORM
-            ========================= -->
-
-            <div class="letter">
-
-                <form
-                    action="https://formspree.io/f/YOUR_FORM_ID"
-                    method="POST"
-                >
-
-                    <label for="name">
-                        Your Name ♡
-                    </label>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Write your name..."
-                        required
-                    >
-
-
-                    <label for="email">
-                        Your Email ♡
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="your@email.com"
-                        required
-                    >
-
-
-                    <label for="message">
-                        Your Message ♡
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="7"
-                        placeholder="Write me a little message..."
-                        required
-                    ></textarea>
-
-
-                    <!-- Helps identify the website -->
-                    <input
-                        type="hidden"
-                        name="_subject"
-                        value="New message from my scrapbook website"
-                    >
-
-
-                    <button
-                        type="submit"
-                        class="sticker-btn"
-                    >
-                        Send My Letter 💌
-                    </button>
-
-                </form>
-
-            </div>
-
-        </div>
-
-
-        <!-- Bottom note -->
-
-        <div class="bottom-note">
-            made with love & little memories ♡
-        </div>
-
-    </section>
-
-</main>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-    © 2026 My Scrapbook ♡
-</footer>
-
-
-<!-- =========================
-     MOBILE CONTACT LAYOUT
-========================= -->
-
-<style>
-
-@media (max-width: 991px) {
-
-    .paper-page > .scrapbook > div[style*="grid-template-columns"] {
-        grid-template-columns: 1fr !important;
-    }
-
-}
+</div>
 
 </style>
 
