@@ -447,13 +447,9 @@ body {
 
 
 .coffee {
-
-    left: 15px;
-
+    right: 15px;
     top: 100px;
-
     transform: rotate(-9deg);
-
     font-size: 34px;
 }
 
@@ -479,15 +475,10 @@ body {
 
 
 .flower-card {
-
-    left: 30px;
-
+    right: 30px;
     bottom: 35px;
-
     transform: rotate(8deg);
-
     background: #ffd8e7;
-
     font-size: 45px;
 }
 
