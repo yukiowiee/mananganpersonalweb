@@ -731,7 +731,7 @@ body {
 
     position: relative;
 
-    width: 310px;
+    width: 260px;
 
     margin: auto;
 
@@ -748,7 +748,7 @@ body {
 
 .portrait-placeholder {
 
-    height: 350px;
+    height: 300px;
 
     background:
         linear-gradient(
