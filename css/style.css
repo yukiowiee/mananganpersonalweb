@@ -759,12 +759,11 @@ body {
         );
 
     .portrait-placeholder img {
-    width: 90%;
-    height: 50%;
+    width: 100%;
+    height: 300px;
     object-fit: cover;
     display: block;
 }
-
     display: flex;
 
     align-items: center;
