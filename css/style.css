@@ -376,9 +376,14 @@ body {
 }
 
 
-.photo-art {
+.portrait-placeholder {
 
-    height: 300px;
+    height: 350px;
+
+    background-image: url("myphoto.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     display: flex;
 
@@ -386,25 +391,12 @@ body {
 
     justify-content: center;
 
-    background:
-        linear-gradient(
-            135deg,
-            #ffd8e6,
-            #ffe8a9 50%,
-            #cde9ff
-        );
-
-    font-family: "Patrick Hand", cursive;
-
-    font-size: 40px;
-
     text-align: center;
 
+    font: 45px "Patrick Hand";
+
     color: #ec5b89;
-
-    letter-spacing: 3px;
 }
-
 
 .caption {
 
