@@ -687,37 +687,24 @@ body {
 ========================= */
 
 .portrait-frame {
-
-    position: relative;
-
-    width: 260px;
-
-    margin: auto;
-
+    width: 350px;
+    height: 430px;
     padding: 15px;
 
-    background: #fff;
+    background: white;
 
-    box-shadow:
-        0 10px 25px #0002;
+    transform: rotate(-5deg);
 
-    transform: rotate(-4deg);
+    box-shadow: 0 12px 25px rgba(80, 50, 50, 0.15);
 }
 
-
 .portrait-placeholder {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 
-    height: 300px;
-
-    background:
-        linear-gradient(
-            135deg,
-            #ffd9e7,
-            #ffe9aa,
-            #cde7ff
-        );
-
-    .portrait-placeholder img {
+.portrait-placeholder img {
     width: 100%;
     height: 100%;
     object-fit: cover;
