@@ -777,6 +777,19 @@ body {
     color: #ec5b89;
 }
 
+.keep-living {
+    display: block;
+    width: fit-content;
+    margin: 15px auto 0;
+    padding: 8px 18px;
+    background: #ffe47a;
+    font-family: "Patrick Hand", cursive;
+    font-size: 24px;
+    color: #3d3035;
+    transform: rotate(-3deg);
+    box-shadow: 2px 4px 8px #0002;
+}
+
 
 .sticker {
 
