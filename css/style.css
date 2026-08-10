@@ -1,1764 +1,1545 @@
 :root {
 
-```
---cream: #fffaf0;
---paper: #fffdf7;
+    --cream: #fffaf0;
+    --paper: #fffdf7;
 
---pink: #ff4f8b;
---hotpink: #ed3d78;
+    --pink: #ff4f8b;
+    --hotpink: #ed3d78;
 
---peach: #ffd9b8;
---yellow: #ffe47a;
---blue: #b9dfff;
+    --peach: #ffd9b8;
+    --yellow: #ffe47a;
+    --blue: #b9dfff;
 
---ink: #3d3035;
---muted: #7b6870;
+    --ink: #3d3035;
+    --muted: #7b6870;
 
---line: #eadfd5;
-```
-
+    --line: #eadfd5;
 }
 
-/\* =========================
-BASIC
-\========================= \*/
 
-- {
-  box-sizing: border-box;
-  }
+/* =========================
+   BASIC
+========================= */
+
+* {
+    box-sizing: border-box;
+}
 
 html {
-scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
 
-```
-margin: 0;
+    margin: 0;
 
-color: var(--ink);
+    color: var(--ink);
 
-font-family: "Quicksand", sans-serif;
+    font-family: "Quicksand", sans-serif;
 
-background: #eee3d6;
-```
-
+    background: #eee3d6;
 }
 
-/\* =========================
-NAVIGATION
-\========================= \*/
+
+/* =========================
+   NAVIGATION
+========================= */
 
 .scrap-nav {
 
-```
-position: sticky;
+    position: sticky;
 
-top: 0;
+    top: 0;
 
-z-index: 1000;
+    z-index: 1000;
 
-background: rgba(255, 250, 240, .96);
+    background: rgba(255, 250, 240, .96);
 
-border-bottom: 1px solid #e7d8ca;
+    border-bottom: 1px solid #e7d8ca;
 
-box-shadow:
-    0 2px 15px rgba(80, 55, 40, .08);
+    box-shadow:
+        0 2px 15px rgba(80, 55, 40, .08);
 
-padding: 12px 0;
-```
-
+    padding: 12px 0;
 }
+
 
 .brand {
 
-```
-font-family: "Patrick Hand", cursive;
+    font-family: "Patrick Hand", cursive;
 
-font-size: 27px;
+    font-size: 27px;
 
-color: var(--hotpink);
+    color: var(--hotpink);
 
-text-decoration: none;
+    text-decoration: none;
 
-letter-spacing: .5px;
-```
-
+    letter-spacing: .5px;
 }
+
 
 .nav-links {
 
-```
-display: flex;
+    display: flex;
 
-justify-content: center;
+    justify-content: center;
 
-gap: 10px;
+    gap: 10px;
 
-align-items: center;
+    align-items: center;
 
-padding-top: 4px;
-```
-
+    padding-top: 4px;
 }
+
 
 .nav-links a {
 
-```
-font-family: "Patrick Hand", cursive;
+    font-family: "Patrick Hand", cursive;
 
-font-size: 20px;
+    font-size: 20px;
 
-color: #59464e;
+    color: #59464e;
 
-text-decoration: none;
+    text-decoration: none;
 
-padding: 6px 12px;
+    padding: 6px 12px;
 
-border-radius: 8px;
+    border-radius: 8px;
 
-transition: .2s;
-```
-
+    transition: .2s;
 }
 
-.nav-links a\:hover,
+
+.nav-links a:hover,
 .nav-links a.active {
 
-```
-color: var(--hotpink);
+    color: var(--hotpink);
 
-background: #ffe8ef;
+    background: #ffe8ef;
 
-transform: rotate(-2deg);
-```
-
+    transform: rotate(-2deg);
 }
+
 
 .menu-btn {
 
-```
-border: 1px solid #e6cfd7;
+    border: 1px solid #e6cfd7;
 
-background: #fff1f5;
+    background: #fff1f5;
 
-border-radius: 8px;
+    border-radius: 8px;
 
-padding: 6px 10px;
+    padding: 6px 10px;
 
-color: var(--hotpink);
-```
-
+    color: var(--hotpink);
 }
 
-/\* =========================
-PAPER BACKGROUND
-\========================= \*/
+
+/* =========================
+   PAPER BACKGROUND
+========================= */
 
 .paper-page {
 
-```
-min-height: calc(100vh - 125px);
+    min-height: calc(100vh - 125px);
 
-padding: 38px 15px 60px;
+    padding: 38px 15px 60px;
 
-background:
+    background:
 
-    radial-gradient(
-        circle at 10% 20%,
-        rgba(255,255,255,.75),
-        transparent 24%
-    ),
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255,255,255,.75),
+            transparent 24%
+        ),
 
-    linear-gradient(
-        90deg,
-        rgba(190,150,120,.05) 1px,
-        transparent 1px
-    ),
+        linear-gradient(
+            90deg,
+            rgba(190,150,120,.05) 1px,
+            transparent 1px
+        ),
 
-    linear-gradient(
-        rgba(190,150,120,.05) 1px,
-        transparent 1px
-    ),
+        linear-gradient(
+            rgba(190,150,120,.05) 1px,
+            transparent 1px
+        ),
 
-    #f3eadf;
+        #f3eadf;
 
-background-size:
-    auto,
-    32px 32px,
-    32px 32px;
-```
-
+    background-size:
+        auto,
+        32px 32px,
+        32px 32px;
 }
 
-/\* =========================
-SCRAPBOOK
-\========================= \*/
+
+/* =========================
+   SCRAPBOOK
+========================= */
 
 .scrapbook {
 
-```
-position: relative;
+    position: relative;
 
-max-width: 1080px;
+    max-width: 1080px;
 
-min-height: 720px;
+    min-height: 720px;
 
-background: var(--paper);
+    background: var(--paper);
 
-border: 1px solid #eadfd5;
+    border: 1px solid #eadfd5;
 
-box-shadow:
-    0 16px 45px rgba(74,48,33,.16);
+    box-shadow:
+        0 16px 45px rgba(74,48,33,.16);
 
-overflow: hidden;
+    overflow: hidden;
 
-padding: 70px;
-```
-
+    padding: 70px;
 }
+
 
 .scrapbook::before {
 
-```
-content: "";
+    content: "";
 
-position: absolute;
+    position: absolute;
 
-inset: 0;
+    inset: 0;
 
-pointer-events: none;
+    pointer-events: none;
 
-opacity: .35;
+    opacity: .35;
 
-background-image:
-    radial-gradient(
-        #d9c4b2 .6px,
-        transparent .7px
-    );
+    background-image:
+        radial-gradient(
+            #d9c4b2 .6px,
+            transparent .7px
+        );
 
-background-size: 7px 7px;
-```
-
+    background-size: 7px 7px;
 }
+
 
 .inner-page {
 
-```
-min-height: 760px;
-```
-
+    min-height: 760px;
 }
 
-/\* =========================
-HERO
-\========================= \*/
+
+/* =========================
+   HERO
+========================= */
 
 .hero-copy {
 
-```
-position: relative;
+    position: relative;
 
-z-index: 2;
+    z-index: 2;
 
-width: 48%;
+    width: 48%;
 
-padding-top: 40px;
-```
-
+    padding-top: 40px;
 }
+
 
 .tiny-label {
 
-```
-font-size: 12px;
+    font-size: 12px;
 
-letter-spacing: 3px;
+    letter-spacing: 3px;
 
-color: #b18d7c;
-```
-
+    color: #b18d7c;
 }
+
 
 .hero-copy h1 {
 
-```
-font-family: "DM Serif Display", serif;
+    font-family: "DM Serif Display", serif;
 
-font-size: clamp(48px, 6vw, 78px);
+    font-size: clamp(48px, 6vw, 78px);
 
-line-height: .98;
+    line-height: .98;
 
-margin: 14px 0 22px;
+    margin: 14px 0 22px;
 
-color: #3b2c33;
-```
-
+    color: #3b2c33;
 }
+
 
 .hero-copy h1 span {
 
-```
-color: var(--pink);
-```
-
+    color: var(--pink);
 }
+
 
 .intro {
 
-```
-font-size: 17px;
+    font-size: 17px;
 
-line-height: 1.8;
+    line-height: 1.8;
 
-color: #66545c;
+    color: #66545c;
 
-max-width: 540px;
-```
-
+    max-width: 540px;
 }
 
-/\* =========================
-BUTTON
-\========================= \*/
+
+/* =========================
+   BUTTON
+========================= */
 
 .sticker-btn {
 
-```
-display: inline-block;
+    display: inline-block;
 
-margin-top: 18px;
+    margin-top: 18px;
 
-background: var(--pink);
+    background: var(--pink);
 
-color: white;
+    color: white;
 
-border: 0;
+    border: 0;
 
-border-radius: 9px;
+    border-radius: 9px;
 
-padding: 12px 21px;
+    padding: 12px 21px;
 
-font-family: "Patrick Hand", cursive;
+    font-family: "Patrick Hand", cursive;
 
-font-size: 21px;
+    font-size: 21px;
 
-box-shadow: 4px 5px 0 #d72f69;
+    box-shadow: 4px 5px 0 #d72f69;
 
-transform: rotate(-2deg);
+    transform: rotate(-2deg);
 
-transition: .2s;
+    transition: .2s;
 
-cursor: pointer;
+    cursor: pointer;
 
-text-decoration: none;
-```
-
+    text-decoration: none;
 }
 
-.sticker-btn\:hover {
 
-```
-color: white;
+.sticker-btn:hover {
 
-transform:
-    rotate(1deg)
-    translateY(-2px);
+    color: white;
 
-box-shadow:
-    5px 7px 0 #d72f69;
-```
+    transform:
+        rotate(1deg)
+        translateY(-2px);
 
+    box-shadow:
+        5px 7px 0 #d72f69;
 }
 
-/\* =========================
-COLLAGE
-\========================= \*/
+
+/* =========================
+   COLLAGE
+========================= */
 
 .collage {
 
-```
-position: absolute;
+    position: absolute;
 
-right: 45px;
+    right: 45px;
 
-top: 105px;
+    top: 105px;
 
-width: 49%;
+    width: 49%;
 
-height: 500px;
-```
-
+    height: 500px;
 }
+
 
 .photo {
 
-```
-position: absolute;
+    position: absolute;
 
-background: white;
+    background: white;
 
-padding: 12px 12px 35px;
+    padding: 12px 12px 35px;
 
-box-shadow:
-    0 8px 25px rgba(70,45,40,.2);
+    box-shadow:
+        0 8px 25px rgba(70,45,40,.2);
 
-transform: rotate(4deg);
-```
-
+    transform: rotate(4deg);
 }
+
 
 .photo-main {
 
-```
-width: 290px;
+    width: 290px;
 
-right: 60px;
+    right: 60px;
 
-top: 35px;
-```
-
+    top: 35px;
 }
+
 
 .photo-art {
 
-```
-height: 300px;
+    height: 300px;
 
-display: flex;
+    display: flex;
 
-align-items: center;
+    align-items: center;
 
-justify-content: center;
+    justify-content: center;
 
-background:
-    linear-gradient(
-        135deg,
-        #ffd8e6,
-        #ffe8a9 50%,
-        #cde9ff
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #ffd8e6,
+            #ffe8a9 50%,
+            #cde9ff
+        );
 
-font-family: "Patrick Hand", cursive;
+    font-family: "Patrick Hand", cursive;
 
-font-size: 40px;
+    font-size: 40px;
 
-text-align: center;
+    text-align: center;
 
-color: #ec5b89;
+    color: #ec5b89;
 
-letter-spacing: 3px;
-```
-
+    letter-spacing: 3px;
 }
+
 
 .caption {
 
-```
-position: absolute;
+    position: absolute;
 
-bottom: 7px;
+    bottom: 7px;
 
-left: 20px;
+    left: 20px;
 
-font-family: "Patrick Hand", cursive;
+    font-family: "Patrick Hand", cursive;
 
-font-size: 21px;
+    font-size: 21px;
 
-color: #5e4d53;
-```
-
+    color: #5e4d53;
 }
 
-/\* =========================
-MINI CARDS
-\========================= \*/
+
+/* =========================
+   MINI CARDS
+========================= */
 
 .mini-card {
 
-```
-position: absolute;
+    position: absolute;
 
-padding: 14px;
+    padding: 14px;
 
-background: #fff3a6;
+    background: #fff3a6;
 
-box-shadow:
-    0 7px 15px #a9957b55;
+    box-shadow:
+        0 7px 15px #a9957b55;
 
-font-family: "Patrick Hand", cursive;
+    font-family: "Patrick Hand", cursive;
 
-text-align: center;
-```
-
+    text-align: center;
 }
+
 
 .coffee {
 
-```
-left: 15px;
+    left: 15px;
 
-top: 100px;
+    top: 100px;
 
-transform: rotate(-9deg);
+    transform: rotate(-9deg);
 
-font-size: 34px;
-```
-
+    font-size: 34px;
 }
+
 
 .coffee small {
 
-```
-font-size: 18px;
-```
-
+    font-size: 18px;
 }
+
 
 .note {
 
-```
-right: 15px;
+    right: 15px;
 
-top: 310px;
+    top: 310px;
 
-transform: rotate(7deg);
+    transform: rotate(7deg);
 
-background: #cfe8ff;
+    background: #cfe8ff;
 
-font-size: 24px;
-```
-
+    font-size: 24px;
 }
+
 
 .flower-card {
 
-```
-left: 30px;
+    left: 30px;
 
-bottom: 35px;
+    bottom: 35px;
 
-transform: rotate(8deg);
+    transform: rotate(8deg);
 
-background: #ffd8e7;
+    background: #ffd8e7;
 
-font-size: 45px;
-```
-
+    font-size: 45px;
 }
 
-/\* =========================
-POLAROID
-\========================= \*/
+
+/* =========================
+   POLAROID
+========================= */
 
 .polaroid {
 
-```
-position: absolute;
+    position: absolute;
 
-left: 150px;
+    left: 150px;
 
-bottom: 5px;
+    bottom: 5px;
 
-width: 135px;
+    width: 135px;
 
-padding: 12px 12px 8px;
+    padding: 12px 12px 8px;
 
-background: white;
+    background: white;
 
-text-align: center;
+    text-align: center;
 
-box-shadow:
-    0 6px 18px #0002;
+    box-shadow:
+        0 6px 18px #0002;
 
-transform: rotate(-6deg);
+    transform: rotate(-6deg);
 
-font-size: 35px;
+    font-size: 35px;
 
-color: #ff5e91;
-```
-
+    color: #ff5e91;
 }
+
 
 .polaroid span {
 
-```
-font-family: "Patrick Hand";
+    font-family: "Patrick Hand";
 
-font-size: 19px;
+    font-size: 19px;
 
-color: #54434a;
-```
-
+    color: #54434a;
 }
 
-/\* =========================
-TAPE
-\========================= \*/
+
+/* =========================
+   TAPE
+========================= */
 
 .tape {
 
-```
-position: absolute;
+    position: absolute;
 
-width: 135px;
+    width: 135px;
 
-height: 32px;
+    height: 32px;
 
-background: rgba(255,214,117,.72);
+    background: rgba(255,214,117,.72);
 
-z-index: 5;
-```
-
+    z-index: 5;
 }
+
 
 .tape-top {
 
-```
-top: 12px;
+    top: 12px;
 
-left: 45%;
+    left: 45%;
 
-transform: rotate(-2deg);
-```
-
+    transform: rotate(-2deg);
 }
+
 
 .tape-left {
 
-```
-top: 18px;
+    top: 18px;
 
-left: 70px;
+    left: 70px;
 
-transform: rotate(-10deg);
-```
-
+    transform: rotate(-10deg);
 }
+
 
 .tape-right {
 
-```
-top: 18px;
+    top: 18px;
 
-right: 80px;
+    right: 80px;
 
-transform: rotate(8deg);
-```
-
+    transform: rotate(8deg);
 }
 
-/\* =========================
-DOODLES
-\========================= \*/
+
+/* =========================
+   DOODLES
+========================= */
 
 .doodle {
 
-```
-position: absolute;
+    position: absolute;
 
-font-family: "Patrick Hand", cursive;
+    font-family: "Patrick Hand", cursive;
 
-color: var(--pink);
+    color: var(--pink);
 
-z-index: 2;
-```
-
+    z-index: 2;
 }
+
 
 .star {
 
-```
-font-size: 38px;
-```
-
+    font-size: 38px;
 }
+
 
 .s1 {
 
-```
-right: 35px;
+    right: 35px;
 
-top: 55px;
-```
-
+    top: 55px;
 }
+
 
 .s2 {
 
-```
-left: 48%;
+    left: 48%;
 
-bottom: 40px;
-```
-
+    bottom: 40px;
 }
+
 
 .s3 {
 
-```
-right: 70px;
+    right: 70px;
 
-top: 85px;
-```
-
+    top: 85px;
 }
+
 
 .s4 {
 
-```
-left: 30px;
+    left: 30px;
 
-top: 85px;
-```
-
+    top: 85px;
 }
+
 
 .flower {
 
-```
-left: 50px;
+    left: 50px;
 
-top: 300px;
+    top: 300px;
 
-font-size: 38px;
+    font-size: 38px;
 
-color: #f7a84d;
-```
-
+    color: #f7a84d;
 }
+
 
 .heart {
 
-```
-right: 35px;
+    right: 35px;
 
-bottom: 55px;
+    bottom: 55px;
 
-font-size: 45px;
-```
-
+    font-size: 45px;
 }
+
 
 .sparkle {
 
-```
-right: 45px;
+    right: 45px;
 
-top: 80px;
+    top: 80px;
 
-font-size: 28px;
-```
-
+    font-size: 28px;
 }
+
 
 .heart-big {
 
-```
-position: absolute;
+    position: absolute;
 
-right: 50px;
+    right: 50px;
 
-top: 65px;
+    top: 65px;
 
-font: 80px "Patrick Hand";
+    font: 80px "Patrick Hand";
 
-color: #ff9bb9;
-```
-
+    color: #ff9bb9;
 }
 
-/\* =========================
-BOTTOM TEXT
-\========================= \*/
+
+/* =========================
+   BOTTOM TEXT
+========================= */
 
 .bottom-note {
 
-```
-position: absolute;
+    position: absolute;
 
-bottom: 25px;
+    bottom: 25px;
 
-left: 70px;
+    left: 70px;
 
-font-family: "Patrick Hand";
+    font-family: "Patrick Hand";
 
-font-size: 18px;
+    font-size: 18px;
 
-color: #9d7c83;
+    color: #9d7c83;
 
-transform: rotate(-2deg);
-```
-
+    transform: rotate(-2deg);
 }
 
-/\* =========================
-PAGE TITLES
-\========================= \*/
+
+/* =========================
+   PAGE TITLES
+========================= */
 
 .page-title {
 
-```
-position: relative;
+    position: relative;
 
-z-index: 2;
+    z-index: 2;
 
-margin-bottom: 45px;
-```
-
+    margin-bottom: 45px;
 }
+
 
 .page-title span {
 
-```
-font: 18px "Patrick Hand";
+    font: 18px "Patrick Hand";
 
-color: var(--pink);
-```
-
+    color: var(--pink);
 }
+
 
 .page-title h1 {
 
-```
-font-size: 58px;
+    font-size: 58px;
 
-margin: 0;
+    margin: 0;
 
-color: #3d3035;
-```
-
+    color: #3d3035;
 }
+
 
 .page-title p {
 
-```
-font-family: "Patrick Hand";
+    font-family: "Patrick Hand";
 
-font-size: 22px;
+    font-size: 22px;
 
-color: #947f87;
+    color: #947f87;
 
-margin: 0;
-```
-
+    margin: 0;
 }
 
-/\* =========================
-ABOUT
-\========================= \*/
+
+/* =========================
+   ABOUT
+========================= */
 
 .portrait-frame {
 
-```
-position: relative;
+    position: relative;
 
-width: 310px;
+    width: 310px;
 
-margin: auto;
+    margin: auto;
 
-padding: 15px;
+    padding: 15px;
 
-background: #fff;
+    background: #fff;
 
-box-shadow:
-    0 10px 25px #0002;
+    box-shadow:
+        0 10px 25px #0002;
 
-transform: rotate(-4deg);
-```
-
+    transform: rotate(-4deg);
 }
+
 
 .portrait-placeholder {
 
-```
-height: 350px;
+    height: 350px;
 
-background:
-    linear-gradient(
-        135deg,
-        #ffd9e7,
-        #ffe9aa,
-        #cde7ff
-    );
+    background:
+        linear-gradient(
+            135deg,
+            #ffd9e7,
+            #ffe9aa,
+            #cde7ff
+        );
 
-display: flex;
+    display: flex;
 
-align-items: center;
+    align-items: center;
 
-justify-content: center;
+    justify-content: center;
 
-text-align: center;
+    text-align: center;
 
-font: 45px "Patrick Hand";
+    font: 45px "Patrick Hand";
 
-color: #ec5b89;
-```
-
+    color: #ec5b89;
 }
+
 
 .sticker {
 
-```
-position: absolute;
+    position: absolute;
 
-right: -30px;
+    right: -30px;
 
-bottom: 30px;
+    bottom: 30px;
 
-background: #ffe57c;
+    background: #ffe57c;
 
-border-radius: 50%;
+    border-radius: 50%;
 
-padding: 18px 20px;
+    padding: 18px 20px;
 
-font: 23px "Patrick Hand";
+    font: 23px "Patrick Hand";
 
-transform: rotate(8deg);
+    transform: rotate(8deg);
 
-box-shadow: 2px 4px 10px #0002;
-```
-
+    box-shadow: 2px 4px 10px #0002;
 }
+
 
 .lined-note {
 
-```
-background:
-    repeating-linear-gradient(
-        to bottom,
-        #fffdf7 0,
-        #fffdf7 31px,
-        #e9dfe0 32px
-    );
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            #fffdf7 0,
+            #fffdf7 31px,
+            #e9dfe0 32px
+        );
 
-padding: 22px 25px 15px;
+    padding: 22px 25px 15px;
 
-border-left: 4px solid #ffc4d6;
-```
-
+    border-left: 4px solid #ffc4d6;
 }
+
 
 .lined-note h2 {
 
-```
-font-size: 36px;
-```
-
+    font-size: 36px;
 }
+
 
 .lined-note h2 span {
 
-```
-color: var(--pink);
-```
-
+    color: var(--pink);
 }
+
 
 .lined-note p {
 
-```
-font-size: 16px;
+    font-size: 16px;
 
-line-height: 2;
-```
-
+    line-height: 2;
 }
+
 
 .hand {
 
-```
-font: 25px "Patrick Hand" !important;
+    font: 25px "Patrick Hand" !important;
 
-color: var(--pink);
+    color: var(--pink);
 
-text-align: right;
-```
-
+    text-align: right;
 }
 
-/\* =========================
-FACTS
-\========================= \*/
+
+/* =========================
+   FACTS
+========================= */
 
 .fact-grid {
 
-```
-display: grid;
+    display: grid;
 
-grid-template-columns:
-    repeat(4, 1fr);
+    grid-template-columns:
+        repeat(4, 1fr);
 
-gap: 18px;
+    gap: 18px;
 
-margin-top: 45px;
-```
-
+    margin-top: 45px;
 }
+
 
 .fact {
 
-```
-padding: 17px;
+    padding: 17px;
 
-background: #fff3f6;
+    background: #fff3f6;
 
-border: 1px dashed #e9aabc;
+    border: 1px dashed #e9aabc;
 
-transform: rotate(-1deg);
-```
-
+    transform: rotate(-1deg);
 }
 
-.fact\:nth-child(2) {
 
-```
-background: #fff9d8;
+.fact:nth-child(2) {
 
-transform: rotate(2deg);
-```
+    background: #fff9d8;
 
+    transform: rotate(2deg);
 }
 
-.fact\:nth-child(3) {
 
-```
-background: #e9f6ff;
+.fact:nth-child(3) {
 
-transform: rotate(-2deg);
-```
+    background: #e9f6ff;
 
+    transform: rotate(-2deg);
 }
 
-.fact\:nth-child(4) {
 
-```
-background: #f3eaff;
+.fact:nth-child(4) {
 
-transform: rotate(1deg);
-```
+    background: #f3eaff;
 
+    transform: rotate(1deg);
 }
+
 
 .fact b,
 .fact span {
 
-```
-display: block;
-```
-
+    display: block;
 }
+
 
 .fact b {
 
-```
-font: 22px "Patrick Hand";
+    font: 22px "Patrick Hand";
 
-color: var(--pink);
-```
-
+    color: var(--pink);
 }
+
 
 .fact span {
 
-```
-font-size: 13px;
+    font-size: 13px;
 
-margin-top: 4px;
-```
-
+    margin-top: 4px;
 }
 
-/\* =========================
-SKILLS
-\========================= \*/
+
+/* =========================
+   SKILLS
+========================= */
 
 .skills-board {
 
-```
-display: grid;
+    display: grid;
 
-grid-template-columns:
-    repeat(2, 1fr);
+    grid-template-columns:
+        repeat(2, 1fr);
 
-gap: 28px;
+    gap: 28px;
 
-max-width: 800px;
+    max-width: 800px;
 
-margin: auto;
-```
-
+    margin: auto;
 }
+
 
 .skill-note {
 
-```
-position: relative;
+    position: relative;
 
-background: #fff7b9;
+    background: #fff7b9;
 
-padding: 30px 28px 24px;
+    padding: 30px 28px 24px;
 
-box-shadow:
-    0 10px 20px #735a4522;
+    box-shadow:
+        0 10px 20px #735a4522;
 
-border: 1px solid #eadc9a;
-```
-
+    border: 1px solid #eadc9a;
 }
 
-.skill-note\:nth-child(2) {
 
-```
-background: #dff2ff;
-```
+.skill-note:nth-child(2) {
 
+    background: #dff2ff;
 }
 
-.skill-note\:nth-child(3) {
 
-```
-background: #ffe1ed;
-```
+.skill-note:nth-child(3) {
 
+    background: #ffe1ed;
 }
 
-.skill-note\:nth-child(4) {
 
-```
-background: #e9e1ff;
-```
+.skill-note:nth-child(4) {
 
+    background: #e9e1ff;
 }
+
 
 .rotate-left {
 
-```
-transform: rotate(-2deg);
-```
-
+    transform: rotate(-2deg);
 }
+
 
 .rotate-right {
 
-```
-transform: rotate(2deg);
-```
-
+    transform: rotate(2deg);
 }
+
 
 .rotate-left2 {
 
-```
-transform: rotate(1.5deg);
-```
-
+    transform: rotate(1.5deg);
 }
+
 
 .rotate-right2 {
 
-```
-transform: rotate(-1.5deg);
-```
-
+    transform: rotate(-1.5deg);
 }
+
 
 .skill-icon {
 
-```
-font: 34px "Patrick Hand";
+    font: 34px "Patrick Hand";
 
-color: var(--hotpink);
-```
-
+    color: var(--hotpink);
 }
+
 
 .skill-note h3 {
 
-```
-font-size: 29px;
+    font-size: 29px;
 
-margin: 4px 0;
-```
-
+    margin: 4px 0;
 }
+
 
 .skill-note p {
 
-```
-color: #6e5d62;
-```
-
+    color: #6e5d62;
 }
+
 
 .skill-line {
 
-```
-height: 9px;
+    height: 9px;
 
-background: #ffffffaa;
+    background: #ffffffaa;
 
-border-radius: 20px;
+    border-radius: 20px;
 
-overflow: hidden;
-```
-
+    overflow: hidden;
 }
+
 
 .skill-line i {
 
-```
-display: block;
+    display: block;
 
-height: 100%;
+    height: 100%;
 
-background: var(--pink);
+    background: var(--pink);
 
-border-radius: 20px;
-```
-
+    border-radius: 20px;
 }
+
 
 .skill-note small {
 
-```
-font: 16px "Patrick Hand";
+    font: 16px "Patrick Hand";
 
-color: #b73d68;
-```
-
+    color: #b73d68;
 }
+
 
 .interest-strip {
 
-```
-margin-top: 50px;
+    margin-top: 50px;
 
-display: flex;
+    display: flex;
 
-justify-content: center;
+    justify-content: center;
 
-gap: 12px;
+    gap: 12px;
 
-flex-wrap: wrap;
-```
-
+    flex-wrap: wrap;
 }
+
 
 .interest-strip span {
 
-```
-font: 20px "Patrick Hand";
+    font: 20px "Patrick Hand";
 
-background: #fff;
+    background: #fff;
 
-padding: 9px 16px;
+    padding: 9px 16px;
 
-box-shadow: 2px 4px 8px #0001;
+    box-shadow: 2px 4px 8px #0001;
 
-transform: rotate(-2deg);
-```
-
+    transform: rotate(-2deg);
 }
 
-.interest-strip span\:nth-child(even) {
 
-```
-transform: rotate(2deg);
+.interest-strip span:nth-child(even) {
 
-background: #ffe1eb;
-```
+    transform: rotate(2deg);
 
+    background: #ffe1eb;
 }
 
-/\* =========================
-PROJECTS
-\========================= \*/
+
+/* =========================
+   PROJECTS
+========================= */
 
 .project-grid {
 
-```
-display: grid;
+    display: grid;
 
-grid-template-columns:
-    repeat(2, 1fr);
+    grid-template-columns:
+        repeat(2, 1fr);
 
-gap: 35px;
-```
-
+    gap: 35px;
 }
+
 
 .memory-card {
 
-```
-position: relative;
+    position: relative;
 
-background: #fff;
+    background: #fff;
 
-padding: 15px 15px 20px;
+    padding: 15px 15px 20px;
 
-box-shadow:
-    0 10px 22px #0002;
-```
-
+    box-shadow:
+        0 10px 22px #0002;
 }
+
 
 .memory-card h3 {
 
-```
-font-size: 29px;
+    font-size: 29px;
 
-margin:
-    17px 4px 5px;
-```
-
+    margin:
+        17px 4px 5px;
 }
+
 
 .memory-card p {
 
-```
-margin: 0 5px;
+    margin: 0 5px;
 
-color: #6e5d62;
+    color: #6e5d62;
 
-line-height: 1.6;
-```
-
+    line-height: 1.6;
 }
+
 
 .tag {
 
-```
-display: inline-block;
+    display: inline-block;
 
-margin: 12px 4px 0;
+    margin: 12px 4px 0;
 
-background: #ffdfeb;
+    background: #ffdfeb;
 
-color: #c43c69;
+    color: #c43c69;
 
-border-radius: 20px;
+    border-radius: 20px;
 
-padding: 4px 11px;
+    padding: 4px 11px;
 
-font: 17px "Patrick Hand";
-```
-
+    font: 17px "Patrick Hand";
 }
+
 
 .project-thumb {
 
-```
-height: 190px;
+    height: 190px;
 
-display: flex;
+    display: flex;
 
-align-items: center;
+    align-items: center;
 
-justify-content: center;
+    justify-content: center;
 
-text-align: center;
+    text-align: center;
 
-font: 35px "Patrick Hand";
+    font: 35px "Patrick Hand";
 
-letter-spacing: 3px;
+    letter-spacing: 3px;
 
-color: white;
-```
-
+    color: white;
 }
+
 
 .database {
 
-```
-background:
-    linear-gradient(
-        135deg,
-        #8d6a54,
-        #e5b184
-    );
-```
-
+    background:
+        linear-gradient(
+            135deg,
+            #8d6a54,
+            #e5b184
+        );
 }
+
 
 .web {
 
-```
-background:
-    linear-gradient(
-        135deg,
-        #ee7da5,
-        #ffc37a
-    );
-```
-
+    background:
+        linear-gradient(
+            135deg,
+            #ee7da5,
+            #ffc37a
+        );
 }
+
 
 .hazard {
 
-```
-background:
-    linear-gradient(
-        135deg,
-        #76b7d7,
-        #ffe075
-    );
-```
-
+    background:
+        linear-gradient(
+            135deg,
+            #76b7d7,
+            #ffe075
+        );
 }
+
 
 .presentation {
 
-```
-background:
-    linear-gradient(
-        135deg,
-        #9d83d5,
-        #ff9fbc
-    );
-```
-
+    background:
+        linear-gradient(
+            135deg,
+            #9d83d5,
+            #ff9fbc
+        );
 }
+
 
 .card-tape {
 
-```
-position: absolute;
+    position: absolute;
 
-width: 100px;
+    width: 100px;
 
-height: 25px;
+    height: 25px;
 
-background: #ffe17d99;
+    background: #ffe17d99;
 
-top: 5px;
+    top: 5px;
 
-left: calc(50% - 50px);
+    left: calc(50% - 50px);
 
-transform: rotate(-3deg);
-```
-
+    transform: rotate(-3deg);
 }
 
 @media (max-width: 650px) {
 
-```
-.skills-board,
-.project-grid {
-    grid-template-columns: 1fr;
-}
-```
+    .skills-board,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 
 }
 
 
 
-/\* =========================
-CONTACT
-\========================= \*/
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact-note {
 
-```
-padding: 35px;
+    padding: 35px;
 
-background: #fff3b1;
+    background: #fff3b1;
 
-box-shadow:
-    0 10px 20px #0002;
+    box-shadow:
+        0 10px 20px #0002;
 
-transform: rotate(-2deg);
-```
-
+    transform: rotate(-2deg);
 }
+
 
 .contact-note h2 {
 
-```
-font-size: 42px;
-```
-
+    font-size: 42px;
 }
+
 
 .contact-note p {
 
-```
-line-height: 1.8;
-```
-
+    line-height: 1.8;
 }
+
 
 .contact-line {
 
-```
-font: 20px "Patrick Hand";
+    font: 20px "Patrick Hand";
 
-margin: 22px 0;
+    margin: 22px 0;
 
-color: #5d4a51;
-```
-
+    color: #5d4a51;
 }
+
 
 .contact-line b {
 
-```
-font-family: "Quicksand";
+    font-family: "Quicksand";
 
-font-size: 14px;
-```
-
+    font-size: 14px;
 }
+
 
 .letter {
 
-```
-position: relative;
+    position: relative;
 
-background: #fffdf7;
+    background: #fffdf7;
 
-padding: 35px;
+    padding: 35px;
 
-box-shadow:
-    0 10px 25px #0002;
+    box-shadow:
+        0 10px 25px #0002;
 
-transform: rotate(1deg);
+    transform: rotate(1deg);
 
-border: 1px solid #eadfd5;
-```
-
+    border: 1px solid #eadfd5;
 }
+
 
 .letter::before {
 
-```
-content: "";
+    content: "";
 
-position: absolute;
+    position: absolute;
 
-left: 25px;
+    left: 25px;
 
-right: 25px;
+    right: 25px;
 
-top: 25px;
+    top: 25px;
 
-height: 4px;
+    height: 4px;
 
-background: #ffb2c8;
-```
-
+    background: #ffb2c8;
 }
+
 
 .letter label {
 
-```
-display: block;
+    display: block;
 
-font: 20px "Patrick Hand";
+    font: 20px "Patrick Hand";
 
-margin: 12px 0 5px;
+    margin: 12px 0 5px;
 
-color: #a24b67;
-```
-
+    color: #a24b67;
 }
+
 
 .letter input,
 .letter textarea {
 
-```
-width: 100%;
+    width: 100%;
 
-border: 0;
+    border: 0;
 
-border-bottom: 2px solid #e4d7d8;
+    border-bottom: 2px solid #e4d7d8;
 
-background: transparent;
+    background: transparent;
 
-padding: 9px 4px;
+    padding: 9px 4px;
 
-outline: none;
+    outline: none;
 
-font-family: "Quicksand";
-```
-
+    font-family: "Quicksand";
 }
+
 
 .letter textarea {
 
-```
-resize: vertical;
-```
-
+    resize: vertical;
 }
+
 
 .success-note {
 
-```
-margin-top: 20px;
+    margin-top: 20px;
 
-background: #e4f7e7;
+    background: #e4f7e7;
 
-padding: 15px;
+    padding: 15px;
 
-font-family: "Patrick Hand";
+    font-family: "Patrick Hand";
 
-font-size: 18px;
+    font-size: 18px;
 
-color: #4d7653;
-```
-
+    color: #4d7653;
 }
 
-/\* =========================
-FOOTER
-\========================= \*/
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
 
-```
-text-align: center;
+    text-align: center;
 
-background: #fffaf0;
+    background: #fffaf0;
 
-border-top: 1px solid #e7d8ca;
+    border-top: 1px solid #e7d8ca;
 
-padding: 18px;
+    padding: 18px;
 
-color: #8c777e;
+    color: #8c777e;
 
-font: 18px "Patrick Hand";
-```
-
+    font: 18px "Patrick Hand";
 }
 
-/\* =========================
-RESPONSIVE
-\========================= \*/
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media (max-width: 991px) {
 
-```
-.nav-links {
+    .nav-links {
 
-    flex-direction: column;
+        flex-direction: column;
 
-    align-items: flex-start;
+        align-items: flex-start;
 
-    padding: 15px 0;
-}
-
-
-.hero-copy {
-
-    width: 100%;
-
-    padding-top: 20px;
-}
+        padding: 15px 0;
+    }
 
 
-.collage {
+    .hero-copy {
 
-    position: relative;
+        width: 100%;
 
-    right: auto;
-
-    top: auto;
-
-    width: 100%;
-
-    height: 430px;
-
-    margin-top: 30px;
-}
+        padding-top: 20px;
+    }
 
 
-.scrapbook {
+    .collage {
 
-    padding: 60px 35px 50px;
-}
+        position: relative;
+
+        right: auto;
+
+        top: auto;
+
+        width: 100%;
+
+        height: 430px;
+
+        margin-top: 30px;
+    }
 
 
-.fact-grid {
+    .scrapbook {
 
-    grid-template-columns:
-        repeat(2, 1fr);
-}
-```
+        padding: 60px 35px 50px;
+    }
+
+
+    .fact-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
 
 }
+
 
 @media (max-width: 650px) {
 
-```
-.scrapbook {
+    .scrapbook {
 
-    padding:
-        55px 20px 45px;
-}
-
-
-.hero-copy h1 {
-
-    font-size: 50px;
-}
+        padding:
+            55px 20px 45px;
+    }
 
 
-.photo-main {
+    .hero-copy h1 {
 
-    width: 220px;
-
-    right: 10px;
-}
+        font-size: 50px;
+    }
 
 
-.photo-art {
+    .photo-main {
 
-    height: 230px;
-}
+        width: 220px;
 
-
-.mini-card.note {
-
-    right: 0;
-}
+        right: 10px;
+    }
 
 
-.polaroid {
+    .photo-art {
 
-    left: 50px;
-}
-
-
-.page-title h1 {
-
-    font-size: 43px;
-}
+        height: 230px;
+    }
 
 
-.skills-board,
-.project-grid {
+    .mini-card.note {
 
-    grid-template-columns: 1fr;
-}
-
-
-.fact-grid {
-
-    grid-template-columns: 1fr;
-}
+        right: 0;
+    }
 
 
-.portrait-frame {
+    .polaroid {
 
-    width: 270px;
-}
+        left: 50px;
+    }
 
 
-.portrait-placeholder {
+    .page-title h1 {
 
-    height: 300px;
-}
-```
+        font-size: 43px;
+    }
+
+
+    .skills-board,
+    .project-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .fact-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .portrait-frame {
+
+        width: 270px;
+    }
+
+
+    .portrait-placeholder {
+
+        height: 300px;
+    }
 
 }
