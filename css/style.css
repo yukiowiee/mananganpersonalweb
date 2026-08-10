@@ -459,21 +459,6 @@ body {
     font-size: 18px;
 }
 
-
-.note {
-
-    right: 15px;
-
-    top: 310px;
-
-    transform: rotate(7deg);
-
-    background: #cfe8ff;
-
-    font-size: 24px;
-}
-
-
 .flower-card {
     right: 30px;
     bottom: 35px;
